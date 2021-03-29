@@ -9,6 +9,8 @@ import net.dv8tion.jda.api.entities.User
 import com.isirk.kotlinbot.extensions.toMessage
 import com.isirk.kotlinbot.extensions.toNameDiscrim
 import com.isirk.kotlinbot.extensions.withInvisible
+import com.jagrosh.jdautilities.examples.command.PingCommand
+import net.dv8tion.jda.api.JDA
 import java.lang.Exception
 import java.time.format.DateTimeFormatter
 
@@ -86,9 +88,12 @@ class InfoModule {
         event.reply(builder.toMessage())
     }
 
-    @JDACommand(name = ["avatar", "av"], help = "Get a users avatar")
+    @JDACommand(name = ["avatar", "av"], arguments = "[member]", help = "Get a users avatar")
     fun AvatarCommand(event: CommandEvent){
-        event.reply(EmbedBuilder().setImage(event.author.avatarUrl).withInvisible().toMessage())
+        if (event.args.isEmpty()) {
+            event.reply(EmbedBuilder().setImage(event.author.effectiveAvatarUrl).withInvisible().toMessage())
+        } else
+        event.reply(EmbedBuilder().setImage(resolveMember(event.args, event.guild)?.user?.effectiveAvatarUrl).withInvisible().toMessage())
     }
 
     @JDACommand(name = ["choose"], arguments = "<item> <item> ...", help = "Choose a random item")
@@ -96,8 +101,16 @@ class InfoModule {
         if (event.args.isEmpty()) {
             event.replyWarning("You didn't give me any choices!")
         } else {
-            var args = event.args.replace(" ", "")
-            event.reply("${args.toList()}")
+            val list = listOf(event.args.split(" "))[0]
+            event.reply("${list.random()}")
         }
     }
+
+    /**
+    @JDACommand(name = ["ping"], help = "Get the bots ping")
+    fun PingCommand(event: CommandEvent){
+        val ping = JDA.getRestPing()
+        event.reply("Pong! Average Latency is #{ping} ms")
+    }
+     */
 }
