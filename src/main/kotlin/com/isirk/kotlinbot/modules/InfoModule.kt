@@ -113,4 +113,16 @@ class InfoModule {
         event.reply("Pong! Average Latency is #{ping} ms")
     }
      */
+
+    /**
+    @JDACommand(name = ["choosebestof", "cbo"], arguments = "<number> <item> ...", help = "Choose the max of an item")
+    fun CBOCommand(event: CommandEvent, num: Int, *items: String){
+        var choices = mutableListOf<String>()
+        for (x in 1..num) {
+            var list: List<String> = listOf(items.split(" "))[0]
+            var choice: String = list.random()
+            choices.add(choice)
+        }
+    }
+    */
 }
