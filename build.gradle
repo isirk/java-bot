@@ -1,6 +1,5 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.kotlin.jvm' version '1.4.10'
 }
 
 group 'com.isirk'
@@ -16,19 +15,8 @@ repositories {
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib"
-    compile("net.dv8tion:JDA:4.2.0_247"){
-        exclude module: 'opus-java'
-    }
+    compile("net.dv8tion:JDA:4.2.1_253")
     compile 'com.jagrosh:jda-utilities:3.0.5'
-    compile 'com.fasterxml.jackson.module:jackson-module-kotlin:2.9.8'
-
     compile 'ch.qos.logback:logback-core:1.2.3'
-    testCompile 'org.slf4j:slf4j-api:1.7.30'
-
     compile 'ch.qos.logback:logback-classic:1.2.3'
-}
-
-test {
-    useJUnitPlatform()
 }
