@@ -169,3 +169,4 @@ gradle-app.setting
 # Config
 .env
 config.json
+token.txt
