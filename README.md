@@ -1,17 +1,17 @@
-#Kotlin Bot
+#RoboSirk
 
-A bot made for testing in [Kotlin](https://kotlinlang.org) utilizing JDA and JDA Utilities.
+A bot made for testing in [Java](https://java.com) utilizing JDA and JDA Utilities.
 
 ## Installation
 1. Install [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
 2. Clone the repository
 ```
-$ git clone https://github.com/isirk/Kotlin-Bot
+$ git clone https://github.com/isirk/RoboSirk
 ```
 3. Build the Project
 - Use the gradle toolbar
 - Use `gradle build`
-4. Create and fill-in the `config.json` file
+4. Create and fill in `src/main/resources/token.txt`
 5. Run the bot
 
 ## Contributing
@@ -21,4 +21,4 @@ $ git clone https://github.com/isirk/Kotlin-Bot
 
 &nbsp;
 
-Made with ❤️️ by isirk in kotlin.
+Made with ❤️️ by isirk in Java.
