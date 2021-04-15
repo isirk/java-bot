@@ -16,6 +16,7 @@ public class ShutdownCommand extends Command {
         this.help = "safely shuts off the bot";
         this.guildOnly = false;
         this.ownerCommand = true;
+        this.aliases = new String[]{"logout"};
     }
 
     @Override
