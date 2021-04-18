@@ -1,10 +1,8 @@
-package com.isirk.RoboSirk.commands;
+package com.isirk.RoboSirk.commands.dev;
 
 import com.jagrosh.jdautilities.command.Command;
 import com.jagrosh.jdautilities.command.CommandEvent;
 import com.jagrosh.jdautilities.commons.waiter.EventWaiter;
-import com.jagrosh.jdautilities.doc.standard.CommandInfo;
-import com.jagrosh.jdautilities.doc.standard.Error;
 import com.jagrosh.jdautilities.doc.standard.RequiredPermissions;
 import com.jagrosh.jdautilities.menu.Paginator;
 import net.dv8tion.jda.api.Permission;
@@ -14,23 +12,11 @@ import net.dv8tion.jda.api.exceptions.PermissionException;
 import java.awt.*;
 import java.util.concurrent.TimeUnit;
 
-@CommandInfo(
-        name = "guilds",
-        description = "Gets a paginated list of the guilds the bot is on.",
-        requirements = {
-                "The bot has all necessary permissions.",
-                "The user is the bot's owner."
-        }
-)
-@Error(
-        value = "If arguments are provided, but they are not an integer.",
-        response = "[PageNumber] is not a valid integer!"
-)
 @RequiredPermissions({Permission.MESSAGE_EMBED_LINKS, Permission.MESSAGE_ADD_REACTION})
-public class GuildsCommand extends Command {
+public class Guilds extends Command {
 
     private final Paginator.Builder pbuilder;
-    public GuildsCommand(EventWaiter waiter)
+    public Guilds(EventWaiter waiter)
     {
         this.name = "guilds";
         this.help = "shows the list of guilds the bot is on";

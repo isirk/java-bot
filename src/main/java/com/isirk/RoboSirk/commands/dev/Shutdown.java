@@ -1,16 +1,11 @@
-package com.isirk.RoboSirk.commands;
+package com.isirk.RoboSirk.commands.dev;
 
 import com.jagrosh.jdautilities.command.Command;
 import com.jagrosh.jdautilities.command.CommandEvent;
-import com.jagrosh.jdautilities.doc.standard.CommandInfo;
 
-@CommandInfo(
-        name = "Shutdown",
-        description = "Safely shuts down the bot."
-)
-public class ShutdownCommand extends Command {
+public class Shutdown extends Command {
 
-    public ShutdownCommand()
+    public Shutdown()
     {
         this.name = "shutdown";
         this.help = "safely shuts off the bot";
@@ -24,5 +19,4 @@ public class ShutdownCommand extends Command {
         event.reactWarning();
         event.getJDA().shutdown();
     }
-
 }
