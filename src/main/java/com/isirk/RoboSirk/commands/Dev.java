@@ -20,9 +20,10 @@ public class Dev extends Command {
     @Override
     protected void execute(CommandEvent event) {
 
-        EmbedBuilder embed = new EmbedBuilder();
-        embed.setTitle("Dev");
-        embed.setDescription("Here are a list of sub-commands!\n\n`dev <sub-command>`");
+        EmbedBuilder embed = new EmbedBuilder()
+                .setTitle("Dev")
+                .setDescription("Here are a list of sub-commands!\n\n`dev <sub-command>`")
+                .setColor(0x7289DA);
 
         for(Command command : getChildren())
         {

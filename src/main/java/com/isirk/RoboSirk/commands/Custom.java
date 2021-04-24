@@ -15,9 +15,10 @@ public class Custom extends Command {
     @Override
     protected void execute(CommandEvent event) {
 
-        EmbedBuilder embed = new EmbedBuilder();
-        embed.setTitle("Custom");
-        embed.setDescription("Here are a list of sub-commands!\n\n`cc <sub-command>`");
+        EmbedBuilder embed = new EmbedBuilder()
+                .setTitle("Custom")
+                .setDescription("Here are a list of sub-commands!\n\n`cc <sub-command>`")
+                .setColor(0x7289DA);
 
         for(Command command : getChildren())
         {
