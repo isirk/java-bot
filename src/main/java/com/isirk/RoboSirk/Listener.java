@@ -32,7 +32,7 @@ public class Listener extends ListenerAdapter {
             channel.sendMessage(embed.build()).queue();
         }
         else if (msg.startsWith("c!")) {
-            String[] message = event.getMessage().getContentRaw().replace("!", "").split(" ");
+            String[] message = event.getMessage().getContentRaw().replace("c!", "").split(" ");
             String cmd = message[0];
             Map<String, String> cc = new HashMap<>();
             cc.put("test", "test -e");
