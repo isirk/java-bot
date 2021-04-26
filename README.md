@@ -10,7 +10,7 @@
 
 &nbsp;
 
-[Invite Link](https://discord.com/api/oauth2/authorize?client_id=819627068949135400&permissions=2147846208&scope=bot)
+[Invite](https://discord.com/api/oauth2/authorize?client_id=819627068949135400&permissions=2147846208&scope=bot)
 
 [Discord](https://discord.gg/7yZqHfG)
 
