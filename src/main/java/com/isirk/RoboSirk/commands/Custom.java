@@ -1,6 +1,6 @@
 package com.isirk.RoboSirk.commands;
 
-import com.isirk.RoboSirk.commands.cc.Add;
+import com.isirk.RoboSirk.commands.cc.*;
 import com.jagrosh.jdautilities.command.Command;
 import com.jagrosh.jdautilities.command.CommandEvent;
 import net.dv8tion.jda.api.EmbedBuilder;
@@ -9,7 +9,7 @@ public class Custom extends Command {
 
     public Custom() {
         this.name = "cc";
-        this.children = new Command[]{new Add()};
+        this.children = new Command[]{new Add(), new Edit(), new List(), new Remove()};
     }
 
     @Override
@@ -17,8 +17,9 @@ public class Custom extends Command {
 
         EmbedBuilder embed = new EmbedBuilder()
                 .setTitle("Custom")
-                .setDescription("Here are a list of sub-commands!\n\n`cc <sub-command>`")
-                .setColor(0x7289DA);
+                .setDescription("Here are a list of sub-commands!\n\n`c!cc <sub-command>`")
+                .setFooter("These commands require MANAGE SERVER permission")
+                .setColor(0xB8E0FF);
 
         for(Command command : getChildren())
         {

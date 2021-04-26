@@ -4,19 +4,19 @@ import com.jagrosh.jdautilities.command.Command;
 import com.jagrosh.jdautilities.command.CommandEvent;
 import net.dv8tion.jda.api.Permission;
 
-public class Add extends Command {
+public class List extends Command {
 
-    public Add()
+    public List()
     {
-        this.name = "add";
-        this.help = "Adds a custom command";
+        this.name = "list";
+        this.help = "Lists the custom commands for this guild";
         this.guildOnly = true;
         this.userPermissions = new Permission[]{Permission.MANAGE_SERVER};
     }
 
     @Override
     protected void execute(CommandEvent event) {
-        event.reply("Add command works!");
+        event.reply("List command works!");
     }
 }
 

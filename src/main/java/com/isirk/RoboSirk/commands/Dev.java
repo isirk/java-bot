@@ -22,8 +22,8 @@ public class Dev extends Command {
 
         EmbedBuilder embed = new EmbedBuilder()
                 .setTitle("Dev")
-                .setDescription("Here are a list of sub-commands!\n\n`dev <sub-command>`")
-                .setColor(0x7289DA);
+                .setDescription("Here are a list of sub-commands!\n\n`c!dev <sub-command>`")
+                .setColor(0xB8E0FF);
 
         for(Command command : getChildren())
         {

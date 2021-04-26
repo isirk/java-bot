@@ -59,7 +59,7 @@ public class Guilds extends Command {
         event.getJDA().getGuilds().stream()
                 .map(g -> "**"+g.getName()+"** (ID:"+g.getId()+") ~ "+g.getMembers().size()+" Members")
                 .forEach(pbuilder::addItems);
-        Paginator p = pbuilder.setColor(Color.getColor("blurple", 0x7289DA))
+        Paginator p = pbuilder.setColor(Color.getColor("blurple", 0xB8E0FF))
                 .setText(event.getClient().getSuccess()+" Guilds that **"+event.getSelfUser().getName()+"** is connected to"
                         +(event.getJDA().getShardInfo()==null ? ":" : "(Shard ID "+event.getJDA().getShardInfo().getShardId()+"):"))
                 .setUsers(event.getAuthor())
