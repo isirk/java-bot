@@ -20,7 +20,7 @@
 
 &nbsp;
 
-**Upcomming Features**
+**Upcoming Features**
 - [ ] Custom Prefixes
 - [ ] Website
 
