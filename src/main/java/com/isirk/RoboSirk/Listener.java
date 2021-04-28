@@ -7,7 +7,6 @@ import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class Listener extends ListenerAdapter {
 
@@ -34,8 +33,8 @@ public class Listener extends ListenerAdapter {
         else if (msg.startsWith("c!")) {
             String[] message = event.getMessage().getContentRaw().replace("c!", "").split(" ");
             String cmd = message[0];
-            Map<String, String> cc = new HashMap<>();
-            cc.put("test", "test -e");
+            HashMap<String, String> cc = new HashMap<>();
+            cc.put("custom", "-e Custom Commands are cool!");
             if (cc.containsKey(cmd)) {
                 if (cc.get(cmd).contains("-e")) {
                     event.getChannel().sendMessage(new EmbedBuilder().setDescription(cc.get(cmd).replace("-e", "")).setColor(0xB8E0FF).build()).queue();
