@@ -17,4 +17,3 @@ public class List extends Command {
         event.reply("List command works!");
     }
 }
-
