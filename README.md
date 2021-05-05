@@ -22,7 +22,7 @@
 
 **Upcoming Features**
 - [ ] Custom Prefixes
-- [ ] Website
+- [ ] Command List
 
 &nbsp;
 
