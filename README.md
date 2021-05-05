@@ -21,8 +21,8 @@
 &nbsp;
 
 **Upcoming Features**
-- [ ] Custom Prefixes
-- [ ] Command List
+- Custom Prefixes
+- Command List
 
 &nbsp;
 
