@@ -1,8 +1,7 @@
 ## RoboSirk
 
 [![Website](https://img.shields.io/badge/Website-Blue?style=for-the-badge&color=7289DA)](https://asksirk.com/bot)
-
-[![Discord](https://canary.discord.com/api/guilds/743121194911531110/widget.png)](https://discord.gg/7yZqHfG)
+[![Discord](https://img.shields.io/bagde/Discord-Blue?style=for-the-badge&color=7289DA)](https://discord.gg/7yZqHfG)
 
 &nbsp;
 
