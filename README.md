@@ -1,4 +1,4 @@
-## RoboSirk
+## Sirk
 
 [![Website](https://img.shields.io/badge/Website-Blue?style=for-the-badge&color=7289DA)](https://asksirk.com/bot)
 [![Discord](https://img.shields.io/badge/Discord-Blue?style=for-the-badge&color=7289DA)](https://discord.gg/7yZqHfG)
@@ -13,13 +13,13 @@ It has a simple interface and a custom syntax to create a generated output or pl
 
 &nbsp;
 
-[Invite](https://discord.com/api/oauth2/authorize?client_id=819627068949135400&permissions=2147846208&scope=bot)
+[Invite](https://discord.com/api/oauth2/authorize?client_id=751447995270168586&permissions=2147846208&scope=bot)
 
 [Discord](https://discord.gg/7yZqHfG)
 
-[Website](https://asksirk.com/robosirk)
+[Website](https://asksirk.com/sirk)
 
-[Privacy Policy](https://asksirk.com/robosirk/privacy)
+[Privacy Policy](https://asksirk.com/sirk/privacy)
 
 &nbsp;
 
