@@ -7,6 +7,10 @@
 
 **A simple custom commands bot**
 
+A discord bot made for server admins to create commands with a custom output.
+
+It has a simple interface and a custom syntax to create a generated output or plain text.
+
 &nbsp;
 
 [Invite](https://discord.com/api/oauth2/authorize?client_id=819627068949135400&permissions=2147846208&scope=bot)
