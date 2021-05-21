@@ -1,7 +1,8 @@
-package com.isirk.RoboSirk;
+package com.isirk.Sirk;
 
-import com.isirk.RoboSirk.commands.Custom;
-import com.isirk.RoboSirk.commands.Dev;
+import com.isirk.Sirk.commands.Custom;
+import com.isirk.Sirk.commands.Dev;
+import com.isirk.Sirk.listeners.Listener;
 import com.jagrosh.jdautilities.command.CommandClientBuilder;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.OnlineStatus;
@@ -16,7 +17,7 @@ public class Bot {
     public static void main(String[] args) throws LoginException, IOException {
         String token = new String(Files.readAllBytes(Path.of("src/main/resources/token.txt")));
         CommandClientBuilder builder = new CommandClientBuilder()
-                .setPrefix("c!")
+                .setPrefix("^")
                 .setOwnerId("542405601255489537")
                 .setServerInvite("https://discord.gg/7yZqHfG")
                 .setEmojis("\u2705", "\u26a0", "\u203c")

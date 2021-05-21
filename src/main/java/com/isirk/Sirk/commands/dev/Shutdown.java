@@ -1,4 +1,4 @@
-package com.isirk.RoboSirk.commands.dev;
+package com.isirk.Sirk.commands.dev;
 
 import com.jagrosh.jdautilities.command.Command;
 import com.jagrosh.jdautilities.command.CommandEvent;

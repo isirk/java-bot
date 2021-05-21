@@ -1,7 +1,7 @@
-package com.isirk.RoboSirk.commands;
+package com.isirk.Sirk.commands;
 
-import com.isirk.RoboSirk.commands.dev.Guilds;
-import com.isirk.RoboSirk.commands.dev.Shutdown;
+import com.isirk.Sirk.commands.dev.Guilds;
+import com.isirk.Sirk.commands.dev.Shutdown;
 import com.jagrosh.jdautilities.command.Command;
 import com.jagrosh.jdautilities.command.CommandEvent;
 import com.jagrosh.jdautilities.commons.waiter.EventWaiter;
@@ -13,6 +13,7 @@ public class Dev extends Command {
 
     public Dev() {
         this.name = "dev";
+        this.help = "Developer Commands";
         this.ownerCommand = true;
         this.children = new Command[]{new Shutdown(), new Guilds(waiter)};
     }
@@ -22,8 +23,8 @@ public class Dev extends Command {
 
         EmbedBuilder embed = new EmbedBuilder()
                 .setTitle("Dev")
-                .setDescription("Here are a list of sub-commands!\n\n`c!dev <sub-command>`")
-                .setColor(0xB8E0FF);
+                .setDescription(this.help + "\n\n```" + event.getClient().getPrefix() + "dev <sub-command>```")
+                .setColor(0x7289DA);
 
         for(Command command : getChildren())
         {

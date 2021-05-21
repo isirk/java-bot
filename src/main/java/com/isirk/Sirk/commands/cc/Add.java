@@ -1,4 +1,4 @@
-package com.isirk.RoboSirk.commands.cc;
+package com.isirk.Sirk.commands.cc;
 
 import com.jagrosh.jdautilities.command.Command;
 import com.jagrosh.jdautilities.command.CommandEvent;
@@ -16,7 +16,7 @@ public class Add extends Command {
 
     @Override
     protected void execute(CommandEvent event) {
-        event.reply("Add command works!");
+        event.getMessage().addReaction("\uD83D\uDC4C").queue();
     }
 }
 

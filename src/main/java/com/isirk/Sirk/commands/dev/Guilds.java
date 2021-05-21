@@ -1,4 +1,4 @@
-package com.isirk.RoboSirk.commands.dev;
+package com.isirk.Sirk.commands.dev;
 
 import com.jagrosh.jdautilities.command.Command;
 import com.jagrosh.jdautilities.command.CommandEvent;
@@ -58,9 +58,8 @@ public class Guilds extends Command {
         event.getJDA().getGuilds().stream()
                 .map(g -> "**"+g.getName()+"** (ID:"+g.getId()+") ~ "+g.getMembers().size()+" Members")
                 .forEach(pbuilder::addItems);
-        Paginator p = pbuilder.setColor(Color.getColor("blurple", 0xB8E0FF))
-                .setText(event.getClient().getSuccess()+" Guilds that **"+event.getSelfUser().getName()+"** is connected to"
-                        +(event.getJDA().getShardInfo()==null ? ":" : "(Shard ID "+event.getJDA().getShardInfo().getShardId()+"):"))
+        Paginator p = pbuilder.setColor(Color.getColor("blurple", 0x7289DA))
+                .setText("Guilds")
                 .setUsers(event.getAuthor())
                 .build();
         p.paginate(event.getChannel(), page);

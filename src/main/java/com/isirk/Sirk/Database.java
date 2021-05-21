@@ -1,4 +1,4 @@
-package com.isirk.RoboSirk;
+package com.isirk.Sirk;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
